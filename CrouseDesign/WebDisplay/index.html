@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>基于bioproject数据库文献的皮肤癌症趋势分析</title>
+	<script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.0.0/echarts.common.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="topic">
+		<h1>基于bioproject数据库文献的皮肤癌趋势分析</h1>
+	</div>
+	<div id="main"></div>
+	<div class="year-list">
+		<div class="year-list-top">
+			<div><a href="year.html">2011</a></div>
+			<div><a href="year.html">2012</a></div>
+			<div><a href="year.html">2013</a></div>
+			<div><a href="year.html">2014</a></div>
+			<div><a href="year.html">2015</a></div>
+		</div>
+		<div class="year-list-bottom">
+			<div><a href="year.html">2016</a></div>
+			<div><a href="year.html">2017</a></div>
+			<div><a href="year.html">2018</a></div>
+			<div><a href="year.html">2019</a></div>
+			<div><a href="year.html">2020</a></div>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+ 
+        // 指定图表的配置项和数据
+        var option = {
+            title: {
+                text: '近10年皮肤癌研究趋势'
+            },
+            tooltip: {},
+            legend: {
+                data:['文献数量']
+            },
+            xAxis: {
+                data: ["2011","2012","2013","2014","2015","2016","2017","2018","2019","2020"]
+            },
+            yAxis: {},
+            series: [{
+                name: '数量',
+                type: 'line',
+                data: [35, 37, 41, 39, 41, 44,42 ,50 ,39 ,45]
+            }]
+        };
+ 
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+</body>
+</html>

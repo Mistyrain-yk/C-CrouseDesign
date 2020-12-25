@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2020年</title>
+	<script src="https://cdn.bootcdn.net/ajax/libs/echarts/3.6.2/echarts.common.js"></script>
+	<script src="worldcloud.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="topic">
+		<h1>2020年皮肤癌趋势分析</h1>
+	</div>
+	<div class="topic">
+		<h2>2020年热词</h2>
+	</div>
+	<div id="main-year-word"></div>
+	<div class="topic">
+		<h2>2020年趋势</h2>
+	</div>
+	<div id="main-season-line"></div>
+	<div class="season-list">
+		<div><a href="season.html">Spring</a></div>
+		<div><a href="season.html">Summer</a></div>
+		<div><a href="season.html">Autumn</a></div>
+		<div><a href="season.html">Winter</a></div>
+	</div>
+	<script type="text/javascript">		
+		 var JosnList = [
+			{name: "cell", value: "90"},
+            {name: "skin", value: "72"},
+            {name: "human", value: "47"},
+            {name: "cancer", value: "46"},
+            {name: "tumor", value: "37"},
+            {name: "design", value: "36"},
+            {name: "expression", value: "35"},
+            {name: "LSD1", value: "24"},
+            {name: "genes", value: "24"},
+            {name: "found", value: "24"},
+            {name: "FAT1", value: "23"},
+            {name: "MCC", value: "23"},
+            {name: "normal", value: "19"},
+            {name: "epithelial", value: "19"},
+            {name: "promotes", value: "18"},
+            {name: "analysis", value: "18"},
+            {name: "mouse", value: "18"},
+            {name: "treatment", value: "18"},
+            {name: "carcinoma", value: "16"},
+            {name: "dermal", value: "16"},
+        ];
+        var optionFour = {
+            tooltip: {
+                show: true
+            },
+            series: [{
+                name: '项目分析',
+                type: 'wordCloud',
+                sizeRange: [10, 50],//文字范围
+                //文本旋转范围，文本将通过rotationStep45在[-90,90]范围内随机旋转
+                rotationRange: [-45, 90],
+                rotationStep: 45,
+                textRotation: [0, 45, 90, -45],
+                //形状
+                shape: 'circle',
+                textStyle: {
+                    normal: {
+                        normal: {
+                                color: function() {
+                                    return 'rgb(' +
+                                        Math.round(Math.random() * 255) +
+                                        ', ' + Math.round(Math.random() * 255) +
+                                        ', ' + Math.round(Math.random() * 255) + ')'
+                                }
+                            }
+                    },
+                    //悬停上去的颜色设置
+                    emphasis: {
+                        shadowBlur: 10,
+                        shadowColor: '#333'
+                    }
+                },
+                data: JosnList
+            }]
+        };
+        var myChartFour = echarts.init(document.getElementById('main-year-word'));
+        //使用制定的配置项和数据显示图表
+        myChartFour.setOption(optionFour);
+	</script>
+	<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main-season-line'));
+ 
+        // 指定图表的配置项和数据
+        var option = {
+            title: {
+                text: '近10年皮肤癌研究趋势'
+            },
+            tooltip: {},
+            legend: {
+                data:['文献数量']
+            },
+            xAxis: {
+                data: ["Sprng","Summer","Autumn","Winter"]
+            },
+            yAxis: {},
+            series: [{
+                name: '数量',
+                type: 'line',
+                data: [15, 15, 10, 5]
+            }]
+        };
+ 
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "WebSpider_core/1.0.0": {
+        "runtime": {
+          "WebSpider_core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WebSpider_core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

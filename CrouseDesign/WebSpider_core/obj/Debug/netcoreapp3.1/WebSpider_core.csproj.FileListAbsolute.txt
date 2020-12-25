@@ -1,0 +1,12 @@
+D:\大三上课程\C# Program\CrouseDesign\WebSpider_core\obj\Debug\netcoreapp3.1\WebSpider_core.AssemblyInfoInputs.cache
+D:\大三上课程\C# Program\CrouseDesign\WebSpider_core\obj\Debug\netcoreapp3.1\WebSpider_core.AssemblyInfo.cs
+D:\大三上课程\C# Program\CrouseDesign\WebSpider_core\obj\Debug\netcoreapp3.1\WebSpider_core.csproj.CoreCompileInputs.cache
+D:\大三上课程\C# Program\CrouseDesign\WebSpider_core\bin\Debug\netcoreapp3.1\WebSpider_core.exe
+D:\大三上课程\C# Program\CrouseDesign\WebSpider_core\bin\Debug\netcoreapp3.1\WebSpider_core.deps.json
+D:\大三上课程\C# Program\CrouseDesign\WebSpider_core\bin\Debug\netcoreapp3.1\WebSpider_core.runtimeconfig.json
+D:\大三上课程\C# Program\CrouseDesign\WebSpider_core\bin\Debug\netcoreapp3.1\WebSpider_core.runtimeconfig.dev.json
+D:\大三上课程\C# Program\CrouseDesign\WebSpider_core\bin\Debug\netcoreapp3.1\WebSpider_core.dll
+D:\大三上课程\C# Program\CrouseDesign\WebSpider_core\bin\Debug\netcoreapp3.1\WebSpider_core.pdb
+D:\大三上课程\C# Program\CrouseDesign\WebSpider_core\obj\Debug\netcoreapp3.1\WebSpider_core.dll
+D:\大三上课程\C# Program\CrouseDesign\WebSpider_core\obj\Debug\netcoreapp3.1\WebSpider_core.pdb
+D:\大三上课程\C# Program\CrouseDesign\WebSpider_core\obj\Debug\netcoreapp3.1\WebSpider_core.genruntimeconfig.cache
